@@ -1,8 +1,0 @@
-﻿participant,session,date,expName,psychopyVersion,OS,frameRate,keyResp.keys,keyResp.corr,keyResp.rt,keyResp.duration,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,moveOnKeys.rt,moveOnKeys.duration,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,PracticeLoop.order
-,001,2023-11-29_10h59.34.897,choiceRTT,2023.1.3,Win32,60.20832079,,,,,,,,,,,,,,,,,,,,,,,
-,001,2023-11-29_10h59.34.897,choiceRTT,2023.1.3,Win32,60.20832079,c,1,4.3892,,,,,,,,,3.2892,space,5.3357,,0,0,0,0,1,1.1,images/target_cross.jpg,
-,001,2023-11-29_10h59.34.897,choiceRTT,2023.1.3,Win32,60.20832079,c,0,2.1199,,,,,,,,,1.0199,b,0.164,,0,1,1,7,1,1.1,images/target_plus.jpg,
-,001,2023-11-29_10h59.34.897,choiceRTT,2023.1.3,Win32,60.20832079,v,1,2.2174,,,,,,,,,1.1174,space,3.9583,,0,2,2,5,1,1.1,images/target_square.jpg,
-,001,2023-11-29_10h59.34.897,choiceRTT,2023.1.3,Win32,60.20832079,v,1,2.0564,,,,,,,,,0.5564,space,1.9503,,0,3,3,2,1,1.5,images/target_square.jpg,
-,001,2023-11-29_10h59.34.897,choiceRTT,2023.1.3,Win32,60.20832079,c,0,2.2246,,,,,,,,,0.9246,space,3.5358,,0,4,4,1,1,1.3,images/target_plus.jpg,
-,001,2023-11-29_10h59.34.897,choiceRTT,2023.1.3,Win32,60.20832079,c,0,1.8763,,,,,,,,,0.5763,,,,0,5,5,8,1,1.3,images/target_square.jpg,8

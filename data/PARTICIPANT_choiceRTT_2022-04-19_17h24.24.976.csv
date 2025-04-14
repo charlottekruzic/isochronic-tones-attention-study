@@ -1,8 +1,0 @@
-﻿keyResp.keys,keyResp.corr,keyResp.rt,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,participant,session,date,expName,psychopyVersion,OS,frameRate,correctMouseResp
-c,0,3.6424,,,,,,,,2.1424,,0,0,0,4,1,1.5,images/target_plus.jpg,,001,2022-04-19_17h24.24.976,choiceRTT,2021.2.3,MacIntel,60.0024001,
-,0,,-0.055440335,-0.261254001,1,0,0,3.7474,square_button,2.4474,,0,1,1,3,1,1.3,images/target_cross.jpg,,001,2022-04-19_17h24.24.976,choiceRTT,2021.2.3,MacIntel,60.0024001,0
-,0,,0.225013021,-0.228458184,1,0,0,0.7644,plus_button,-0.3356,,0,2,2,7,1,1.1,images/target_plus.jpg,,001,2022-04-19_17h24.24.976,choiceRTT,2021.2.3,MacIntel,60.0024001,1
-,0,,0.223857693,-0.232432251,1,0,0,0.4152,plus_button,-0.6848,,0,3,3,5,1,1.1,images/target_square.jpg,,001,2022-04-19_17h24.24.976,choiceRTT,2021.2.3,MacIntel,60.0024001,0
-,0,,0.219540066,-0.234210069,1,0,0,0.3165,plus_button,-1.1835,,0,4,4,6,1,1.5,images/target_cross.jpg,,001,2022-04-19_17h24.24.976,choiceRTT,2021.2.3,MacIntel,60.0024001,0
-,0,,0.210981852,-0.24072781,1,0,0,0.3651,plus_button,-0.9349,,0,5,5,8,1,1.3,images/target_square.jpg,,001,2022-04-19_17h24.24.976,choiceRTT,2021.2.3,MacIntel,60.0024001,0
-c,1,0.4927,,,,,,,,-0.6073,,0,6,6,0,1,1.1,images/target_cross.jpg,,001,2022-04-19_17h24.24.976,choiceRTT,2021.2.3,MacIntel,60.0024001,

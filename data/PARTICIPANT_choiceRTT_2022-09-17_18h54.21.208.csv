@@ -1,9 +1,0 @@
-﻿keyResp.keys,keyResp.corr,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,correctMouseResp,trialRespTimes,moveOnKeys.keys,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,participant,session,date,expName,psychopyVersion,OS,frameRate,moveOnKeys.rt
-,0,-0.235447049,-0.251901042,1,0,0,7.5638,cross_button,0,6.4638,,0,0,0,7,1,1.1,images/target_plus.jpg,,001,2022-09-17_18h54.21.208,choiceRTT,2021.2.3,MacIntel,59.99880002,
-,0,-0.005021701,-0.266757813,1,0,0,3.0323,square_button,1,1.7323,,0,1,1,8,1,1.3,images/target_square.jpg,,001,2022-09-17_18h54.21.208,choiceRTT,2021.2.3,MacIntel,59.99880002,
-,0,-0.199930556,-0.265894097,1,0,0,2.6227,cross_button,0,1.3227,,0,2,2,1,1,1.3,images/target_plus.jpg,,001,2022-09-17_18h54.21.208,choiceRTT,2021.2.3,MacIntel,59.99880002,
-,0,-0.25329234,-0.282344146,1,0,0,3.2982,cross_button,0,1.7982,,0,3,3,4,1,1.5,images/target_plus.jpg,,001,2022-09-17_18h54.21.208,choiceRTT,2021.2.3,MacIntel,59.99880002,
-,0,0.297513664,-0.279992475,1,0,0,4.5682,plus_button,0,3.2682,,0,4,4,3,1,1.3,images/target_cross.jpg,,001,2022-09-17_18h54.21.208,choiceRTT,2021.2.3,MacIntel,59.99880002,
-,0,0.049736613,-0.279933064,1,0,0,2.1009,square_button,1,1.0009,,0,5,5,5,1,1.1,images/target_square.jpg,,001,2022-09-17_18h54.21.208,choiceRTT,2021.2.3,MacIntel,59.99880002,
-,0,0.264857612,-0.283255109,1,0,0,3.248,plus_button,0,2.148,space,0,6,6,0,1,1.1,images/target_cross.jpg,,001,2022-09-17_18h54.21.208,choiceRTT,2021.2.3,MacIntel,59.99880002,27.9478
-,0,-0.012347513,-0.278378485,1,0,0,3.2563,square_button,1,1.7563,space,0,7,7,2,1,1.5,images/target_square.jpg,,001,2022-09-17_18h54.21.208,choiceRTT,2021.2.3,MacIntel,59.99880002,0.8761

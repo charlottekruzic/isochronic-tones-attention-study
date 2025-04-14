@@ -1,9 +1,0 @@
-﻿participant,session,date,expName,psychopyVersion,OS,frameRate,keyResp.keys,keyResp.corr,keyResp.rt,keyResp.duration,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,moveOnKeys.rt,moveOnKeys.duration,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,PracticeLoop.order
-,001,2023-09-28_10h27.43.244,choiceRTT,2023.1.3,MacIntel,120.0048002,,,,,,,,,,,,,,,,,,,,,,,
-,001,2023-09-28_10h27.43.244,choiceRTT,2023.1.3,MacIntel,120.0048002,b,0,1.6993,,,,,,,,,0.1993,space,5.1762,,0,0,0,2,1,1.5,images/target_square.jpg,
-,001,2023-09-28_10h27.43.244,choiceRTT,2023.1.3,MacIntel,120.0048002,c,1,2.5879,,,,,,,,,1.4879,space,2.1329,,0,1,1,0,1,1.1,images/target_cross.jpg,
-,001,2023-09-28_10h27.43.244,choiceRTT,2023.1.3,MacIntel,120.0048002,c,0,2.0694,,,,,,,,,0.7694,space,0.6072,,0,2,2,1,1,1.3,images/target_plus.jpg,
-,001,2023-09-28_10h27.43.244,choiceRTT,2023.1.3,MacIntel,120.0048002,c,1,1.8975,,,,,,,,,0.5975,space,0.3921,,0,3,3,3,1,1.3,images/target_cross.jpg,
-,001,2023-09-28_10h27.43.244,choiceRTT,2023.1.3,MacIntel,120.0048002,b,0,1.9184,,,,,,,,,0.6184,space,0.9476,,0,4,4,8,1,1.3,images/target_square.jpg,
-,001,2023-09-28_10h27.43.244,choiceRTT,2023.1.3,MacIntel,120.0048002,b,1,2.6106,,,,,,,,,1.1106,space,0.6268,,0,5,5,4,1,1.5,images/target_plus.jpg,
-,001,2023-09-28_10h27.43.244,choiceRTT,2023.1.3,MacIntel,120.0048002,c,1,2.8263,,,,,,,,,1.3263,,,,0,6,6,6,1,1.5,images/target_cross.jpg,8

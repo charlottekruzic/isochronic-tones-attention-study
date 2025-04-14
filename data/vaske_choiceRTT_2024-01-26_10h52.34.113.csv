@@ -1,6 +1,0 @@
-﻿participant,session,date,expName,psychopyVersion,OS,frameRate,keyResp.keys,keyResp.corr,keyResp.rt,keyResp.duration,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,correctMouseResp
-vaske,001,2024-01-26_10h52.34.113,choiceRTT,2023.1.3,Win32,59.88023952,,,,,,,,,,,,,,,,,,,,,
-vaske,001,2024-01-26_10h52.34.113,choiceRTT,2023.1.3,Win32,59.88023952,b,1,5.1444,,,,,,,,,3.6444,,0,0,0,4,1,1.5,images/target_plus.jpg,
-vaske,001,2024-01-26_10h52.34.113,choiceRTT,2023.1.3,Win32,59.88023952,,0,,,-0.198009237,-0.252777812,1,0,0,2.6661,cross_button,1.3661,,0,1,1,3,1,1.3,images/target_cross.jpg,1
-vaske,001,2024-01-26_10h52.34.113,choiceRTT,2023.1.3,Win32,59.88023952,,0,,,0.064953715,-0.261111145,1,0,0,2.2952,square_button,0.7952,,0,2,2,2,1,1.5,images/target_square.jpg,1
-vaske,001,2024-01-26_10h52.34.113,choiceRTT,2023.1.3,Win32,59.88023952,,0,,,-0.215601807,-0.28240743,1,0,0,2.2457,cross_button,0.9457,,0,3,3,1,1,1.3,images/target_plus.jpg,0

@@ -1,2 +1,0 @@
-﻿keyResp.keys,keyResp.corr,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,correctMouseResp,trialRespTimes,moveOnKeys.keys,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,participant,session,date,expName,psychopyVersion,OS,frameRate
-,0,-0.018229167,-0.274739583,1,0,0,5.242,square_button,1,3.742,,0,0,0,2,1,1.5,images/target_square.jpg,prueba,001,2023-04-04_18h52.12.490,choiceRTT,2021.2.3,Win32,60.04924038

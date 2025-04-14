@@ -1,4 +1,0 @@
-﻿keyResp.keys,keyResp.corr,keyResp.rt,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,participant,session,date,expName,psychopyVersion,OS,frameRate
-c,0,3.8936,,,,,,,,2.3936,,0,0,0,2,1,1.5,images/target_square.jpg,是的是的,001,02-28-2023_22h33.53.778,choiceRTT,2021.2.3,Win32,58.27845446
-c,1,5.3507,,,,,,,,4.2507,,0,1,1,0,1,1.1,images/target_cross.jpg,是的是的,001,02-28-2023_22h33.53.778,choiceRTT,2021.2.3,Win32,58.27845446
-c,0,17.2065,0.146201873,-0.055671176,1,0,0,12.219,,15.7065,,0,2,2,4,1,1.5,images/target_plus.jpg,是的是的,001,02-28-2023_22h33.53.778,choiceRTT,2021.2.3,Win32,58.27845446

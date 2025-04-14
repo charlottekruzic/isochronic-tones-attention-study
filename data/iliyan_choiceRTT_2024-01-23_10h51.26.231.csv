@@ -1,6 +1,0 @@
-﻿participant,session,date,expName,psychopyVersion,OS,frameRate,keyResp.keys,keyResp.corr,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,correctMouseResp,trialRespTimes,moveOnKeys.keys,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,keyResp.rt,keyResp.duration,moveOnKeys.rt,moveOnKeys.duration
-iliyan,001,2024-01-23_10h51.26.231,choiceRTT,2023.1.3,Win32,60.24096386,,,,,,,,,,,,,,,,,,,,,,,
-iliyan,001,2024-01-23_10h51.26.231,choiceRTT,2023.1.3,Win32,60.24096386,,0,-0.202777778,0.017592593,1,0,0,2.3133,plus_button,1,1.2133,,0,0,0,7,1,1.1,images/target_plus.jpg,,,,
-iliyan,001,2024-01-23_10h51.26.231,choiceRTT,2023.1.3,Win32,60.24096386,,0,-0.003703704,-0.275925926,1,0,0,2.3292,square_button,1,1.0292,,0,1,1,8,1,1.3,images/target_square.jpg,,,,
-iliyan,001,2024-01-23_10h51.26.231,choiceRTT,2023.1.3,Win32,60.24096386,,0,0.052777778,-0.231481481,1,0,0,4.5223,square_button,1,3.0223,,0,2,2,2,1,1.5,images/target_square.jpg,,,,
-iliyan,001,2024-01-23_10h51.26.231,choiceRTT,2023.1.3,Win32,60.24096386,b,0,,,,,,,,,3.7064,b,0,3,3,5,1,1.1,images/target_square.jpg,4.8064,,3.3466,

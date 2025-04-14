@@ -1,4 +1,0 @@
-﻿participant,session,date,expName,psychopyVersion,OS,frameRate,keyResp.keys,keyResp.corr,keyResp.rt,keyResp.duration,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,moveOnKeys.rt,moveOnKeys.duration,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage
-ddddd,001,2023-12-07_15h03.53.753,choiceRTT,2023.1.3,Win32,59.95203837,,,,,,,,,,,,,,,,,,,,,,
-ddddd,001,2023-12-07_15h03.53.753,choiceRTT,2023.1.3,Win32,59.95203837,b,1,3.769,,,,,,,,,2.669,space,3.086,,0,0,0,7,1,1.1,images/target_plus.jpg
-ddddd,001,2023-12-07_15h03.53.753,choiceRTT,2023.1.3,Win32,59.95203837,v,1,3.544,,,,,,,,,2.044,space,10.211,,0,1,1,2,1,1.5,images/target_square.jpg

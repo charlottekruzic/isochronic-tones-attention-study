@@ -1,8 +1,0 @@
-﻿participant,session,date,expName,psychopyVersion,OS,frameRate,keyResp.keys,keyResp.corr,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,correctMouseResp,trialRespTimes,moveOnKeys.keys,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage
-231fda3,001,2024-02-15_10h31.21.866,choiceRTT,2023.1.3,Linux x86_64,58.47953216,,,,,,,,,,,,,,,,,,,
-231fda3,001,2024-02-15_10h31.21.866,choiceRTT,2023.1.3,Linux x86_64,58.47953216,,0,-0.136666667,-0.0025,1,0,0,15.2,cross_button,0,13.7,,0,0,0,2,1,1.5,images/target_square.jpg
-231fda3,001,2024-02-15_10h31.21.866,choiceRTT,2023.1.3,Linux x86_64,58.47953216,,0,-0.023333333,-0.2225,1,0,0,13.276,square_button,1,11.976,,0,1,1,8,1,1.3,images/target_square.jpg
-231fda3,001,2024-02-15_10h31.21.866,choiceRTT,2023.1.3,Linux x86_64,58.47953216,,0,-0.223333333,-0.255,1,0,0,2.797,cross_button,0,1.297,,0,2,2,4,1,1.5,images/target_plus.jpg
-231fda3,001,2024-02-15_10h31.21.866,choiceRTT,2023.1.3,Linux x86_64,58.47953216,,0,-0.2,-0.255,1,0,0,3.331,cross_button,1,2.231,,0,3,3,0,1,1.1,images/target_cross.jpg
-231fda3,001,2024-02-15_10h31.21.866,choiceRTT,2023.1.3,Linux x86_64,58.47953216,,0,-0.195833333,-0.255833333,1,0,0,2.464,cross_button,1,1.164,,0,4,4,3,1,1.3,images/target_cross.jpg
-231fda3,001,2024-02-15_10h31.21.866,choiceRTT,2023.1.3,Linux x86_64,58.47953216,,0,0.048539114,-0.269085768,1,0,0,52.776,square_button,0,51.476,,0,5,5,1,1,1.3,images/target_plus.jpg

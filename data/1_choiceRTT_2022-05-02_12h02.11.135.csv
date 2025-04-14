@@ -1,8 +1,0 @@
-﻿keyResp.keys,keyResp.corr,keyResp.rt,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,participant,session,date,expName,psychopyVersion,OS,frameRate,moveOnKeys.rt
-v,1,0.9619,,,,,,,,-0.3381,,0,0,0,8,1,1.3,images/target_square.jpg,測試者1,001,2022-05-02_12h02.11.135,choiceRTT,2021.2.3,Win32,60.03842459,
-b,0,1.5787,,,,,,,,0.0787,,0,1,1,6,1,1.5,images/target_cross.jpg,測試者1,001,2022-05-02_12h02.11.135,choiceRTT,2021.2.3,Win32,60.03842459,
-c,1,1.3384,,,,,,,,0.0384,,0,2,2,3,1,1.3,images/target_cross.jpg,測試者1,001,2022-05-02_12h02.11.135,choiceRTT,2021.2.3,Win32,60.03842459,
-c,0,5.4707,,,,,,,,4.3707,c,0,3,3,7,1,1.1,images/target_plus.jpg,測試者1,001,2022-05-02_12h02.11.135,choiceRTT,2021.2.3,Win32,60.03842459,2.4547
-c,1,4.1151,,,,,,,,3.0151,,0,4,4,0,1,1.1,images/target_cross.jpg,測試者1,001,2022-05-02_12h02.11.135,choiceRTT,2021.2.3,Win32,60.03842459,
-v,1,1.5015,,,,,,,,0.4015,,0,5,5,5,1,1.1,images/target_square.jpg,測試者1,001,2022-05-02_12h02.11.135,choiceRTT,2021.2.3,Win32,60.03842459,
-b,1,1.6777,0.129629645,-0.141666676,1,0,0,0.6493,,0.3777,,0,6,6,1,1,1.3,images/target_plus.jpg,測試者1,001,2022-05-02_12h02.11.135,choiceRTT,2021.2.3,Win32,60.03842459,

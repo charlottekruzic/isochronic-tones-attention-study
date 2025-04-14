@@ -1,5 +1,0 @@
-﻿keyResp.keys,keyResp.corr,keyResp.rt,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,moveOnKeys.rt,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,participant,session,date,expName,psychopyVersion,OS,frameRate
-v,0,3.3311,,,,,,,,1.8311,space,7.4932,0,0,0,4,1,1.5,images/target_plus.jpg,loki,001,2023-03-31_11h38.09.809,choiceRTT,2021.2.3,Linux x86_64,60.37189085
-b,1,6.5907,,,,,,,,5.4907,space,1.8346,0,1,1,7,1,1.1,images/target_plus.jpg,loki,001,2023-03-31_11h38.09.809,choiceRTT,2021.2.3,Linux x86_64,60.37189085
-c,1,3.4628,,,,,,,,2.3628,space,2.3612,0,2,2,0,1,1.1,images/target_cross.jpg,loki,001,2023-03-31_11h38.09.809,choiceRTT,2021.2.3,Linux x86_64,60.37189085
-v,1,2.2124,,,,,,,,0.9124,space,3.9662,0,3,3,8,1,1.3,images/target_square.jpg,loki,001,2023-03-31_11h38.09.809,choiceRTT,2021.2.3,Linux x86_64,60.37189085

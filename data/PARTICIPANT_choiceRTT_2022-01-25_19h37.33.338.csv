@@ -1,9 +1,0 @@
-﻿keyResp.keys,keyResp.corr,keyResp.rt,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,moveOnKeys.rt,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,participant,session,date,expName,psychopyVersion,OS,frameRate
-v,1,2.3355,,,,,,,,0.8355,space,5.9537,0,0,0,2,1,1.5,images/target_square.jpg,,001,2022-01-25_19h37.33.338,choiceRTT,2021.2.3,Win32,59.79073244
-b,1,2.0164,,,,,,,,0.7164,space,6.2791,0,1,1,1,1,1.3,images/target_plus.jpg,,001,2022-01-25_19h37.33.338,choiceRTT,2021.2.3,Win32,59.79073244
-c,1,1.8481,,,,,,,,0.5481,space,1.7343,0,2,2,3,1,1.3,images/target_cross.jpg,,001,2022-01-25_19h37.33.338,choiceRTT,2021.2.3,Win32,59.79073244
-v,0,2.2185,,,,,,,,0.7185,space,1.3173,0,3,3,6,1,1.5,images/target_cross.jpg,,001,2022-01-25_19h37.33.338,choiceRTT,2021.2.3,Win32,59.79073244
-b,1,2.2703,,,,,,,,0.7703,space,1.1847,0,4,4,4,1,1.5,images/target_plus.jpg,,001,2022-01-25_19h37.33.338,choiceRTT,2021.2.3,Win32,59.79073244
-b,1,1.7426,,,,,,,,0.6426,space,1.1393,0,5,5,7,1,1.1,images/target_plus.jpg,,001,2022-01-25_19h37.33.338,choiceRTT,2021.2.3,Win32,59.79073244
-b,0,1.6913,,,,,,,,0.5913,space,0.7342,0,6,6,0,1,1.1,images/target_cross.jpg,,001,2022-01-25_19h37.33.338,choiceRTT,2021.2.3,Win32,59.79073244
-v,1,2.0015,,,,,,,,0.7015,space,1.2069,0,7,7,8,1,1.3,images/target_square.jpg,,001,2022-01-25_19h37.33.338,choiceRTT,2021.2.3,Win32,59.79073244

@@ -1,2 +1,0 @@
-﻿keyResp.keys,keyResp.corr,keyResp.rt,mouseResp.x,mouseResp.y,mouseResp.leftButton,mouseResp.midButton,mouseResp.rightButton,mouseResp.time,mouseResp.clicked_name,trialRespTimes,moveOnKeys.keys,moveOnKeys.rt,PracticeLoop.thisRepN,PracticeLoop.thisTrialN,PracticeLoop.thisN,PracticeLoop.thisIndex,PracticeLoop.ran,onsetTime,thisImage,participant,session,date,expName,psychopyVersion,OS,frameRate
-c,1,2.8218,,,,,,,,1.3218,space,4.9486,0,0,0,6,1,1.5,images/target_cross.jpg,Deividas Sauchatas,001,2023-05-11_14h32.03.601,choiceRTT,2021.2.3,Win32,164.5548791

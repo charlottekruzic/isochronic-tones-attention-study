@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on Wed Feb 21 15:32:14 2024
+    on mars 04, 2024, at 15:34
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -105,7 +105,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/axel/software/Gitlab/Pavlovia/Choice_RT/choicertt/choiceRTT_NoInstructions_NoPracticeLoop_lastrun.py',
+        originPath='C:\\Users\\charl\\Desktop\\ter_pavlovia\\choicertt\\choiceRTT_rgb_training.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -304,9 +304,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # Start Code - component code to be run after the window creation
     
-    # --- Initialize components for Routine "mainTrial_instruct" ---
+    # --- Initialize components for Routine "presentation" ---
     main_trial_instruct = visual.TextStim(win=win, name='main_trial_instruct',
-        text='Here comes the main experiment.\n\nClick / tap / press space to continue!\n\nGood luck !',
+        text="Vous êtes sur le point de commencer la phase d'entrainement !\n\nAppuyez sur espace pour afficher les instructions.",
         font='Arial',
         pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
         color='black', colorSpace='rgb', opacity=None, 
@@ -324,6 +324,43 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-3.0)
+    
+    # --- Initialize components for Routine "instructions" ---
+    instr = visual.TextStim(win=win, name='instr',
+        text="Dans cette expérience, vous devez cliquer sur la couleur que vous avez vue, le plus rapidement possible.\n\nAppuyez sur C pour le rouge\nAppuyez sur V pour le vert\nAppuyez sur B pour le bleu\n\nAppuyez sur la barre d'espace ou cliquez/touchez l'un des boutons pour commencer.",
+        font='Arial',
+        units='height', pos=(0, 0.1), height=0.035, wrapWidth=None, ori=0, 
+        color='black', colorSpace='rgb', opacity=1, 
+        languageStyle='LTR',
+        depth=0.0);
+    startInst = keyboard.Keyboard()
+    startMouse = event.Mouse(win=win)
+    x, y = [None, None]
+    startMouse.mouseClock = core.Clock()
+    response_red = visual.ImageStim(
+        win=win,
+        name='response_red', 
+        image='images/response_red.png', mask=None, anchor='center',
+        ori=0.0, pos=(-0.25, -0.25), size=(0.2, 0.1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-3.0)
+    response_green = visual.ImageStim(
+        win=win,
+        name='response_green', 
+        image='images/response_green.png', mask=None, anchor='center',
+        ori=0.0, pos=(0, -0.25), size=(0.2, 0.1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-4.0)
+    response_blue = visual.ImageStim(
+        win=win,
+        name='response_blue', 
+        image='images/response_blue.png', mask=None, anchor='center',
+        ori=0.0, pos=(0.25, -0.25), size=(0.2, 0.1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-5.0)
     
     # --- Initialize components for Routine "trial" ---
     rightright_tile = visual.ImageStim(
@@ -358,27 +395,27 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-4.0)
-    square_button = visual.ImageStim(
+    red_button = visual.ImageStim(
         win=win,
-        name='square_button', 
-        image='images/response_square.jpg', mask=None, anchor='center',
-        ori=0.0, pos=(0, -0.25), size=(0.2, 0.1),
+        name='red_button', 
+        image='images/response_red.png', mask=None, anchor='center',
+        ori=0.0, pos=(-0.25, -0.25), size=(0.2, 0.1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-5.0)
-    plus_button = visual.ImageStim(
+    green_button = visual.ImageStim(
         win=win,
-        name='plus_button', 
-        image='images/response_plus.jpg', mask=None, anchor='center',
-        ori=0.0, pos=(0.25, -0.25), size=(0.2, 0.1),
+        name='green_button', 
+        image='images/response_green.png', mask=None, anchor='center',
+        ori=0.0, pos=(0, -0.25), size=(0.2, 0.1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-6.0)
-    cross_button = visual.ImageStim(
+    blue_button = visual.ImageStim(
         win=win,
-        name='cross_button', 
-        image='images/response_cross.jpg', mask=None, anchor='center',
-        ori=0.0, pos=(-0.25, -0.25), size=(0.2, 0.1),
+        name='blue_button', 
+        image='images/response_blue.png', mask=None, anchor='center',
+        ori=0.0, pos=(0.25, -0.25), size=(0.2, 0.1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-7.0)
@@ -395,9 +432,22 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     x, y = [None, None]
     mouseResp.mouseClock = core.Clock()
     
+    # --- Initialize components for Routine "trial_feedback" ---
+    text_fb = visual.TextStim(win=win, name='text_fb',
+        text='',
+        font='Open Sans',
+        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        color='black', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    moveOnKeys = keyboard.Keyboard()
+    moveOnMouse = event.Mouse(win=win)
+    x, y = [None, None]
+    moveOnMouse.mouseClock = core.Clock()
+    
     # --- Initialize components for Routine "end_message" ---
     end_text = visual.TextStim(win=win, name='end_text',
-        text='That’s the experiment finished!\n\nThanks for your time. You’ve earned a cup of tea.',
+        text="L'entrainement est terminée !\n\nIl est l'heure de passer au test principal.",
         font='Arial',
         pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
         color='black', colorSpace='rgb', opacity=None, 
@@ -415,18 +465,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # store the exact time the global clock started
     expInfo['expStart'] = data.getDateStr(format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6)
     
-    # --- Prepare to start Routine "mainTrial_instruct" ---
+    # --- Prepare to start Routine "presentation" ---
     continueRoutine = True
     # update component parameters for each repeat
-    thisExp.addData('mainTrial_instruct.started', globalClock.getTime())
+    thisExp.addData('presentation.started', globalClock.getTime())
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
     # setup some python lists for storing info about the mouse
     gotValidClick = False  # until a click is received
     # keep track of which components have finished
-    mainTrial_instructComponents = [main_trial_instruct, key_resp, mouse, ready_button]
-    for thisComponent in mainTrial_instructComponents:
+    presentationComponents = [main_trial_instruct, key_resp, mouse, ready_button]
+    for thisComponent in presentationComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -438,7 +488,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "mainTrial_instruct" ---
+    # --- Run Routine "presentation" ---
     routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -544,7 +594,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in mainTrial_instructComponents:
+        for thisComponent in presentationComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -553,11 +603,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "mainTrial_instruct" ---
-    for thisComponent in mainTrial_instructComponents:
+    # --- Ending Routine "presentation" ---
+    for thisComponent in presentationComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('mainTrial_instruct.stopped', globalClock.getTime())
+    thisExp.addData('presentation.stopped', globalClock.getTime())
     # check responses
     if key_resp.keys in ['', [], None]:  # No response was made
         key_resp.keys = None
@@ -575,23 +625,207 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     thisExp.addData('mouse.midButton', buttons[1])
     thisExp.addData('mouse.rightButton', buttons[2])
     thisExp.nextEntry()
-    # the Routine "mainTrial_instruct" was not non-slip safe, so reset the non-slip timer
+    # the Routine "presentation" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # --- Prepare to start Routine "instructions" ---
+    continueRoutine = True
+    # update component parameters for each repeat
+    thisExp.addData('instructions.started', globalClock.getTime())
+    startInst.keys = []
+    startInst.rt = []
+    _startInst_allKeys = []
+    # setup some python lists for storing info about the startMouse
+    gotValidClick = False  # until a click is received
+    startMouse.mouseClock.reset()
+    # keep track of which components have finished
+    instructionsComponents = [instr, startInst, startMouse, response_red, response_green, response_blue]
+    for thisComponent in instructionsComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "instructions" ---
+    routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *instr* updates
+        
+        # if instr is starting this frame...
+        if instr.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr.frameNStart = frameN  # exact frame index
+            instr.tStart = t  # local t and not account for scr refresh
+            instr.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instr, 'tStartRefresh')  # time at next scr refresh
+            # update status
+            instr.status = STARTED
+            instr.setAutoDraw(True)
+        
+        # if instr is active this frame...
+        if instr.status == STARTED:
+            # update params
+            pass
+        
+        # *startInst* updates
+        waitOnFlip = False
+        
+        # if startInst is starting this frame...
+        if startInst.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            startInst.frameNStart = frameN  # exact frame index
+            startInst.tStart = t  # local t and not account for scr refresh
+            startInst.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(startInst, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'startInst.started')
+            # update status
+            startInst.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(startInst.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(startInst.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if startInst.status == STARTED and not waitOnFlip:
+            theseKeys = startInst.getKeys(keyList=None, ignoreKeys=["escape"], waitRelease=False)
+            _startInst_allKeys.extend(theseKeys)
+            if len(_startInst_allKeys):
+                startInst.keys = _startInst_allKeys[-1].name  # just the last key pressed
+                startInst.rt = _startInst_allKeys[-1].rt
+                startInst.duration = _startInst_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
+        # *startMouse* updates
+        
+        # if startMouse is starting this frame...
+        if startMouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            startMouse.frameNStart = frameN  # exact frame index
+            startMouse.tStart = t  # local t and not account for scr refresh
+            startMouse.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(startMouse, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.addData('startMouse.started', t)
+            # update status
+            startMouse.status = STARTED
+            prevButtonState = startMouse.getPressed()  # if button is down already this ISN'T a new click
+        if startMouse.status == STARTED:  # only update if started and not finished!
+            buttons = startMouse.getPressed()
+            if buttons != prevButtonState:  # button state changed?
+                prevButtonState = buttons
+                if sum(buttons) > 0:  # state changed to a new click
+                    continueRoutine = False  # end routine on response        
+        # *response_red* updates
+        
+        # if response_red is starting this frame...
+        if response_red.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            response_red.frameNStart = frameN  # exact frame index
+            response_red.tStart = t  # local t and not account for scr refresh
+            response_red.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(response_red, 'tStartRefresh')  # time at next scr refresh
+            # update status
+            response_red.status = STARTED
+            response_red.setAutoDraw(True)
+        
+        # if response_red is active this frame...
+        if response_red.status == STARTED:
+            # update params
+            pass
+        
+        # *response_green* updates
+        
+        # if response_green is starting this frame...
+        if response_green.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            response_green.frameNStart = frameN  # exact frame index
+            response_green.tStart = t  # local t and not account for scr refresh
+            response_green.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(response_green, 'tStartRefresh')  # time at next scr refresh
+            # update status
+            response_green.status = STARTED
+            response_green.setAutoDraw(True)
+        
+        # if response_green is active this frame...
+        if response_green.status == STARTED:
+            # update params
+            pass
+        
+        # *response_blue* updates
+        
+        # if response_blue is starting this frame...
+        if response_blue.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            response_blue.frameNStart = frameN  # exact frame index
+            response_blue.tStart = t  # local t and not account for scr refresh
+            response_blue.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(response_blue, 'tStartRefresh')  # time at next scr refresh
+            # update status
+            response_blue.status = STARTED
+            response_blue.setAutoDraw(True)
+        
+        # if response_blue is active this frame...
+        if response_blue.status == STARTED:
+            # update params
+            pass
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, inputs=inputs, win=win)
+            return
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in instructionsComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "instructions" ---
+    for thisComponent in instructionsComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    thisExp.addData('instructions.stopped', globalClock.getTime())
+    # store data for thisExp (ExperimentHandler)
+    thisExp.nextEntry()
+    # the Routine "instructions" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
-    ExptLoop = data.TrialHandler(nReps=2.0, method='random', 
+    PracticeLoop = data.TrialHandler(nReps=33.0, method='random', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('RTtimeConditions_own.xlsx'),
-        seed=None, name='ExptLoop')
-    thisExp.addLoop(ExptLoop)  # add the loop to the experiment
-    thisExptLoop = ExptLoop.trialList[0]  # so we can initialise stimuli with some values
-    # abbreviate parameter names if possible (e.g. rgb = thisExptLoop.rgb)
-    if thisExptLoop != None:
-        for paramName in thisExptLoop:
-            globals()[paramName] = thisExptLoop[paramName]
+        trialList=data.importConditions('RTtimeConditions_training.xlsx'),
+        seed=1, name='PracticeLoop')
+    thisExp.addLoop(PracticeLoop)  # add the loop to the experiment
+    thisPracticeLoop = PracticeLoop.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisPracticeLoop.rgb)
+    if thisPracticeLoop != None:
+        for paramName in thisPracticeLoop:
+            globals()[paramName] = thisPracticeLoop[paramName]
     
-    for thisExptLoop in ExptLoop:
-        currentLoop = ExptLoop
+    for thisPracticeLoop in PracticeLoop:
+        currentLoop = PracticeLoop
         thisExp.timestampOnFlip(win, 'thisRow.t')
         # pause experiment here if requested
         if thisExp.status == PAUSED:
@@ -602,10 +836,10 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 timers=[routineTimer], 
                 playbackComponents=[]
         )
-        # abbreviate parameter names if possible (e.g. rgb = thisExptLoop.rgb)
-        if thisExptLoop != None:
-            for paramName in thisExptLoop:
-                globals()[paramName] = thisExptLoop[paramName]
+        # abbreviate parameter names if possible (e.g. rgb = thisPracticeLoop.rgb)
+        if thisPracticeLoop != None:
+            for paramName in thisPracticeLoop:
+                globals()[paramName] = thisPracticeLoop[paramName]
         
         # --- Prepare to start Routine "trial" ---
         continueRoutine = True
@@ -617,18 +851,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         targetX = positionList[0] #pick the first value from the list 
         
         #thisImage is the variable in the Image field of targetImage
-        if thisImage == 'images/target_square.jpg': #path of where to find the target image
-            corrAns = 'v' #setting the key press that will be the correct answer
-            corrButton = square_button #setting the button that will be the correct answer
-            corrButtonName = 'square_button' #making this a string so that it can be compared later when checking for acccuracy
-        elif thisImage == 'images/target_cross.jpg':
-            corrAns = 'c'
-            corrButton = cross_button
-            corrButtonName = 'cross_button'
-        elif thisImage == 'images/target_plus.jpg':
+        if thisImage == 'images/red_dot.png': #path of where to find the target image
+            corrAns = 'c' #setting the key press that will be the correct answer
+            corrButton = red_button #setting the button that will be the correct answer
+            corrButtonName = 'red_button' #making this a string so that it can be compared later when checking for acccuracy
+        elif thisImage == 'images/green_dot.png':
+            corrAns = 'v'
+            corrButton = green_button
+            corrButtonName = 'green_button'
+        elif thisImage == 'images/blue_dot.png':
             corrAns = 'b'
-            corrButton = plus_button
-            corrButtonName = 'plus_button'
+            corrButton = blue_button
+            corrButtonName = 'blue_button'
         
         
         targetImage.setPos([targetX, 0])
@@ -647,7 +881,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         gotValidClick = False  # until a click is received
         mouseResp.mouseClock.reset()
         # keep track of which components have finished
-        trialComponents = [rightright_tile, right_tile, left_tile, leftleft_tile, square_button, plus_button, cross_button, targetImage, keyResp, mouseResp]
+        trialComponents = [rightright_tile, right_tile, left_tile, leftleft_tile, red_button, green_button, blue_button, targetImage, keyResp, mouseResp]
         for thisComponent in trialComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -742,57 +976,57 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update params
                 pass
             
-            # *square_button* updates
+            # *red_button* updates
             
-            # if square_button is starting this frame...
-            if square_button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # if red_button is starting this frame...
+            if red_button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                 # keep track of start time/frame for later
-                square_button.frameNStart = frameN  # exact frame index
-                square_button.tStart = t  # local t and not account for scr refresh
-                square_button.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(square_button, 'tStartRefresh')  # time at next scr refresh
+                red_button.frameNStart = frameN  # exact frame index
+                red_button.tStart = t  # local t and not account for scr refresh
+                red_button.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(red_button, 'tStartRefresh')  # time at next scr refresh
                 # update status
-                square_button.status = STARTED
-                square_button.setAutoDraw(True)
+                red_button.status = STARTED
+                red_button.setAutoDraw(True)
             
-            # if square_button is active this frame...
-            if square_button.status == STARTED:
+            # if red_button is active this frame...
+            if red_button.status == STARTED:
                 # update params
                 pass
             
-            # *plus_button* updates
+            # *green_button* updates
             
-            # if plus_button is starting this frame...
-            if plus_button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # if green_button is starting this frame...
+            if green_button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                 # keep track of start time/frame for later
-                plus_button.frameNStart = frameN  # exact frame index
-                plus_button.tStart = t  # local t and not account for scr refresh
-                plus_button.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(plus_button, 'tStartRefresh')  # time at next scr refresh
+                green_button.frameNStart = frameN  # exact frame index
+                green_button.tStart = t  # local t and not account for scr refresh
+                green_button.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(green_button, 'tStartRefresh')  # time at next scr refresh
                 # update status
-                plus_button.status = STARTED
-                plus_button.setAutoDraw(True)
+                green_button.status = STARTED
+                green_button.setAutoDraw(True)
             
-            # if plus_button is active this frame...
-            if plus_button.status == STARTED:
+            # if green_button is active this frame...
+            if green_button.status == STARTED:
                 # update params
                 pass
             
-            # *cross_button* updates
+            # *blue_button* updates
             
-            # if cross_button is starting this frame...
-            if cross_button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # if blue_button is starting this frame...
+            if blue_button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                 # keep track of start time/frame for later
-                cross_button.frameNStart = frameN  # exact frame index
-                cross_button.tStart = t  # local t and not account for scr refresh
-                cross_button.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(cross_button, 'tStartRefresh')  # time at next scr refresh
+                blue_button.frameNStart = frameN  # exact frame index
+                blue_button.tStart = t  # local t and not account for scr refresh
+                blue_button.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(blue_button, 'tStartRefresh')  # time at next scr refresh
                 # update status
-                cross_button.status = STARTED
-                cross_button.setAutoDraw(True)
+                blue_button.status = STARTED
+                blue_button.setAutoDraw(True)
             
-            # if cross_button is active this frame...
-            if cross_button.status == STARTED:
+            # if blue_button is active this frame...
+            if blue_button.status == STARTED:
                 # update params
                 pass
             
@@ -927,20 +1161,20 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                keyResp.corr = 1;  # correct non-response
             else:
                keyResp.corr = 0;  # failed to respond (incorrectly)
-        # store data for ExptLoop (TrialHandler)
-        ExptLoop.addData('keyResp.keys',keyResp.keys)
-        ExptLoop.addData('keyResp.corr', keyResp.corr)
+        # store data for PracticeLoop (TrialHandler)
+        PracticeLoop.addData('keyResp.keys',keyResp.keys)
+        PracticeLoop.addData('keyResp.corr', keyResp.corr)
         if keyResp.keys != None:  # we had a response
-            ExptLoop.addData('keyResp.rt', keyResp.rt)
-            ExptLoop.addData('keyResp.duration', keyResp.duration)
-        # store data for ExptLoop (TrialHandler)
-        ExptLoop.addData('mouseResp.x', mouseResp.x)
-        ExptLoop.addData('mouseResp.y', mouseResp.y)
-        ExptLoop.addData('mouseResp.leftButton', mouseResp.leftButton)
-        ExptLoop.addData('mouseResp.midButton', mouseResp.midButton)
-        ExptLoop.addData('mouseResp.rightButton', mouseResp.rightButton)
-        ExptLoop.addData('mouseResp.time', mouseResp.time)
-        ExptLoop.addData('mouseResp.clicked_name', mouseResp.clicked_name)
+            PracticeLoop.addData('keyResp.rt', keyResp.rt)
+            PracticeLoop.addData('keyResp.duration', keyResp.duration)
+        # store data for PracticeLoop (TrialHandler)
+        PracticeLoop.addData('mouseResp.x', mouseResp.x)
+        PracticeLoop.addData('mouseResp.y', mouseResp.y)
+        PracticeLoop.addData('mouseResp.leftButton', mouseResp.leftButton)
+        PracticeLoop.addData('mouseResp.midButton', mouseResp.midButton)
+        PracticeLoop.addData('mouseResp.rightButton', mouseResp.rightButton)
+        PracticeLoop.addData('mouseResp.time', mouseResp.time)
+        PracticeLoop.addData('mouseResp.clicked_name', mouseResp.clicked_name)
         # Run 'End Routine' code from recordRTandAccuracy
         #this code is to record the reaction times and accuracy of the trial
         
@@ -976,12 +1210,151 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         #print(thisRoutineDuration, thisRecRT, thisRespType, thisAcc, onsetTime)
         # the Routine "trial" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
+        
+        # --- Prepare to start Routine "trial_feedback" ---
+        continueRoutine = True
+        # update component parameters for each repeat
+        thisExp.addData('trial_feedback.started', globalClock.getTime())
+        text_fb.setText("The duration of the last routine was: "  + str(round(thisRoutineDuration, 3)) + " \nThe last recorded RT was: "  + str(round(thisRecRT, 3)) + " \nThe response type was: "  + thisRespType + " \nThe response was: "  + thisAcc + " \n\nPress or click to continue."  )
+        moveOnKeys.keys = []
+        moveOnKeys.rt = []
+        _moveOnKeys_allKeys = []
+        # setup some python lists for storing info about the moveOnMouse
+        gotValidClick = False  # until a click is received
+        moveOnMouse.mouseClock.reset()
+        # keep track of which components have finished
+        trial_feedbackComponents = [text_fb, moveOnKeys, moveOnMouse]
+        for thisComponent in trial_feedbackComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
+        
+        # --- Run Routine "trial_feedback" ---
+        routineForceEnded = not continueRoutine
+        while continueRoutine:
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *text_fb* updates
+            
+            # if text_fb is starting this frame...
+            if text_fb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_fb.frameNStart = frameN  # exact frame index
+                text_fb.tStart = t  # local t and not account for scr refresh
+                text_fb.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_fb, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'text_fb.started')
+                # update status
+                text_fb.status = STARTED
+                text_fb.setAutoDraw(True)
+            
+            # if text_fb is active this frame...
+            if text_fb.status == STARTED:
+                # update params
+                pass
+            
+            # *moveOnKeys* updates
+            waitOnFlip = False
+            
+            # if moveOnKeys is starting this frame...
+            if moveOnKeys.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                moveOnKeys.frameNStart = frameN  # exact frame index
+                moveOnKeys.tStart = t  # local t and not account for scr refresh
+                moveOnKeys.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(moveOnKeys, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'moveOnKeys.started')
+                # update status
+                moveOnKeys.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(moveOnKeys.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(moveOnKeys.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if moveOnKeys.status == STARTED and not waitOnFlip:
+                theseKeys = moveOnKeys.getKeys(keyList=['c','v','b','space'], ignoreKeys=["escape"], waitRelease=False)
+                _moveOnKeys_allKeys.extend(theseKeys)
+                if len(_moveOnKeys_allKeys):
+                    moveOnKeys.keys = _moveOnKeys_allKeys[-1].name  # just the last key pressed
+                    moveOnKeys.rt = _moveOnKeys_allKeys[-1].rt
+                    moveOnKeys.duration = _moveOnKeys_allKeys[-1].duration
+                    # a response ends the routine
+                    continueRoutine = False
+            # *moveOnMouse* updates
+            
+            # if moveOnMouse is starting this frame...
+            if moveOnMouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                moveOnMouse.frameNStart = frameN  # exact frame index
+                moveOnMouse.tStart = t  # local t and not account for scr refresh
+                moveOnMouse.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(moveOnMouse, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.addData('moveOnMouse.started', t)
+                # update status
+                moveOnMouse.status = STARTED
+                prevButtonState = moveOnMouse.getPressed()  # if button is down already this ISN'T a new click
+            if moveOnMouse.status == STARTED:  # only update if started and not finished!
+                buttons = moveOnMouse.getPressed()
+                if buttons != prevButtonState:  # button state changed?
+                    prevButtonState = buttons
+                    if sum(buttons) > 0:  # state changed to a new click
+                        continueRoutine = False  # end routine on response            
+            # check for quit (typically the Esc key)
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                thisExp.status = FINISHED
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, inputs=inputs, win=win)
+                return
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in trial_feedbackComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "trial_feedback" ---
+        for thisComponent in trial_feedbackComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        thisExp.addData('trial_feedback.stopped', globalClock.getTime())
+        # check responses
+        if moveOnKeys.keys in ['', [], None]:  # No response was made
+            moveOnKeys.keys = None
+        PracticeLoop.addData('moveOnKeys.keys',moveOnKeys.keys)
+        if moveOnKeys.keys != None:  # we had a response
+            PracticeLoop.addData('moveOnKeys.rt', moveOnKeys.rt)
+            PracticeLoop.addData('moveOnKeys.duration', moveOnKeys.duration)
+        # store data for PracticeLoop (TrialHandler)
+        # the Routine "trial_feedback" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 2.0 repeats of 'ExptLoop'
+    # completed 33.0 repeats of 'PracticeLoop'
     
     
     # --- Prepare to start Routine "end_message" ---

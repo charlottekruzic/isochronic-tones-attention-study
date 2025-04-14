@@ -11,25 +11,55 @@ This study explores the influence of auditory stimulation using 500Hz isochronic
 
 ```
 isochronic-tones-attention-study/
-├── experiment/
-│   ├── images/
-│   │   ├── (image files used in the experiment)
-│   ├── choiceRTT_rgb_main_lastrun.py
-│   ├── choiceRTT_rgb_main.psyexp
-│   ├── choiceRTT_rgb_main.py
-│   ├── choiceRTT_rgb_training_lastrun.py
-│   ├── choiceRTT_rgb_training.psyexp
-│   ├── choiceRTT_rgb_training.py
-│   ├── RTimeConditions_main.xlsx
-│   └── RTimeConditions_training.xlsx
-├── sound_generation/
-│   └── generate_sounds.py
-├── sounds/
-│   ├── noise.wav
-│   └── isochronic_tones_noise.wav
-├── project-report-fr.pdf
+├── experiment/               # PsychoPy implementation
+├── sound_generation/         # Python code to generate audio stimuli
+├── sounds/                   # Pre-generated audio files
+├── project-report-fr.pdf     # Full research report (in French)
+├── LICENCE                   # MIT License
 └── README.md
 ```
+
+## 🔧 Methodology
+### 🧪 Experiment design
+- Adapted from Deary and Liewald's ["Simple Choice Reaction Time Task"](https://link.springer.com/article/10.3758/s13428-010-0024-1) program, implemented using PsychoPy.
+- Includes a custom training phase to familiarize participants with the task
+- Two sessions per participant with:
+    - Brown noise only (control)
+    - Brown noise + isochronic tones (stimulation)
+- 300 trials per condition, counterbalanced design
+
+### 🎵 Sound generation
+- Python-generated stimuli using scipy and colorednoise:
+    - 500Hz isochronic tones with a 10Hz beating frequency
+    - Brown noise background (neutral acoustic environment)
+    - Compliant with Shannon-Nyquist theorem (44.1kHz sampling)
+
+### 🖥️ Experiment protocol
+- Training phase (100 trials, no sound)
+- Three test phases per session (300 trials each, sound):
+    - Visual color discrimination task
+    - Reaction time and accuracy recording
+- Identical hardware/software for all participants
+
+### 📊 Data collection
+- Automated logging via PsychoPy:
+    - Reaction times
+    - Response accuracy
+- 12 000 data points total (6 participants × 2 000 trials)
+
+### 📈 Data analysis
+- Statistical methods:
+    - Mann-Whitney U tests
+    - Median/IQR comparison across conditions
+    - Individual vs. group-level analysis
+- Data cleaning:
+    - Exclusion of outliers
+    - Error trials removed from RT analysis
+
+## 📌 Summary of results
+- Significant reduction in reaction times with isochronic tones
+- No significant effect on error rates
+- Individual variability in responses
 
 ## 📑 Full documentation
 For complete methodology, detailed results, statistical analysis, and in-depth discussion, please refer to the comprehensive [research report (in French)](project-report-fr.pdf) included in this repository.

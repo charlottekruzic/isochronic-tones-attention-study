@@ -1,4 +1,4 @@
-# Isochronic tones and its effect on attention
+# Isochronic tones and their effect on attention
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains the code and resources used for my research project (TER - Travail d'Étude et de Recherche) at the University of Strasbourg, supervised by Axel HUTT.
